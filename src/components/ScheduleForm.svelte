@@ -189,7 +189,7 @@
       value="monday"
       bind:group={days}
       on:change={() => {
-        date = null;
+        date = "";
         validateForm();
       }}
     />
@@ -202,7 +202,7 @@
       value="tuesday"
       bind:group={days}
       on:change={() => {
-        date = null;
+        date = "";
         validateForm();
       }}
     />
@@ -215,7 +215,7 @@
       value="wednesday"
       bind:group={days}
       on:change={() => {
-        date = null;
+        date = "";
         validateForm();
       }}
     />
@@ -228,7 +228,7 @@
       value="thursday"
       bind:group={days}
       on:change={() => {
-        date = null;
+        date = "";
         validateForm();
       }}
     />
@@ -241,7 +241,7 @@
       value="friday"
       bind:group={days}
       on:change={() => {
-        date = null;
+        date = "";
         validateForm();
       }}
     />
@@ -252,7 +252,7 @@
     <select
       bind:value={frequency}
       on:change={() => {
-        date = null;
+        date = "";
         validateForm();
       }}
     >
