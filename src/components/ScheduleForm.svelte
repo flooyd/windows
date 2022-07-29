@@ -8,7 +8,7 @@
   let businessName = "";
   let startBy = "8am";
   let finishBy = "8pm";
-  let date = null;
+  let date = "";
   let phone = null;
   let email = null;
   let priceValid = false;
@@ -30,6 +30,10 @@
   };
 
   $: console.log(form);
+
+  function isNumber(n) {
+    return /^-?[\d.]+(?:e-?\d+)?$/.test(n);
+  }
   const validateForm = () => {
     formIsValid = false;
     checkMinimumPrice();
@@ -43,7 +47,7 @@
       return;
     }
 
-    if (days.length === 0 && date === null) {
+    if (days.length === 0 && date === "") {
       return;
     }
 
@@ -67,8 +71,10 @@
     }
 
     if (
-      date &&
-      (date.toString().length != 8 || date.toString().includes("e"))
+      !isNumber(date) ||
+      date.length !== 8 ||
+      date.includes("e") ||
+      date.includes("-")
     ) {
       return;
     }
@@ -262,7 +268,7 @@
     >
     <input
       name="date"
-      type="number"
+      type="text"
       bind:value={date}
       on:input={() => {
         days = [];
