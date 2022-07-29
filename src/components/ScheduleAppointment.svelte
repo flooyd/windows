@@ -15,12 +15,12 @@
   .header {
     font-size: 20px;
     margin-bottom: 20px;
-    margin-top: 31px;
+    margin-top: 20px;
     font-weight: bold;
   }
   .formContainer {
     background: lightyellow;
-    padding: 20px;
+    padding: 13px;
     border: 3px solid blue;
     width: calc(100% - 40px);
   }

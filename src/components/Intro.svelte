@@ -106,6 +106,7 @@
     font-weight: bold;
     border-bottom: 3px solid blue;
     margin-bottom: 20px;
+    margin-top: 20px;
   }
 
   .cookies {
@@ -118,7 +119,7 @@
   }
 
   p {
-    margin-bottom: 20px;
+    margin-bottom: 13px;
   }
 
   .showIntro {

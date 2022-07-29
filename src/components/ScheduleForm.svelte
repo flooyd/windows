@@ -306,7 +306,7 @@
   form {
     background: #fff;
     color: black;
-    padding: 20px;
+    padding: 13px;
     margin-top: 20px;
     border: 1px solid black;
   }
@@ -333,7 +333,7 @@
   }
 
   .field {
-    margin: 20px 0px;
+    margin: 16px 0px;
     width: fit-content;
   }
 
