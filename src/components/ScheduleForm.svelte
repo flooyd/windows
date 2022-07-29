@@ -325,7 +325,6 @@
     display: block;
     width: 100%;
     caret-color: black;
-    width: 300px;
   }
 
   label {
