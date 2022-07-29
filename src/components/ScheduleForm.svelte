@@ -84,8 +84,8 @@
 
   const checkMinimumPrice = () => {
     let price = businessName
-      ? Math.floor(numWindows * 3)
-      : Math.floor(numWindows * 4.5);
+      ? Math.floor(numWindows * 2.75)
+      : Math.floor(numWindows * 4.0);
     if (price >= 20) priceValid = true;
     else priceValid = false;
   };
@@ -288,8 +288,8 @@
   {#if priceValid}
     <p class="bold price">
       Price: {numWindows || 0} windows/doors/mirrors = ${businessName
-        ? Math.floor(numWindows * 3)
-        : Math.floor(numWindows * 4.5)}
+        ? Math.floor(numWindows * 2.75)
+        : Math.floor(numWindows * 4.0)}
     </p>
   {/if}
   {#if !priceValid}

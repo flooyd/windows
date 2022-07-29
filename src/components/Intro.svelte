@@ -49,7 +49,7 @@
     </p>
     <div class="header">Pricing</div>
     <p>
-      The price is $3.00 ($4.50 for residential) per window/door/mirror
+      The price is $2.75 ($4.00 for residential) per window/door/mirror
       (includes both sides of glass).
     </p>
     <p>Minimum price is $20.</p>
