@@ -13,7 +13,7 @@
 
 <style>
   .header {
-    font-size: 25px;
+    font-size: 20px;
     margin-bottom: 20px;
     margin-top: 31px;
     font-weight: bold;

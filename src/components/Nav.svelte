@@ -22,7 +22,7 @@
 
   .title {
     margin-right: 20px;
-    font-size: 49px;
+    font-size: 31px;
     font-family: "Noto Sans", sans-serif;
   }
 </style>
