@@ -1,7 +1,7 @@
 import { publish } from "gh-pages";
 
 publish(
-  "dist", // path to public directory
+  "windows/dist", // path to public directory
   {
     branch: "gh-pages",
     repo: "https://github.com/flooyd/windows.git", // Update to point to your repository
