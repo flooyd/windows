@@ -70,13 +70,15 @@
       return;
     }
 
-    if (
-      (date && !isNumber(date)) ||
-      date.length !== 8 ||
-      date.includes("e") ||
-      date.includes("-")
-    ) {
-      return;
+    if (date.length > 0) {
+      if (
+        !isNumber(date) ||
+        date.length !== 8 ||
+        date.includes("e") ||
+        date.includes("-")
+      ) {
+        return;
+      }
     }
 
     if (businessName === "" && !confirmResidential) {
