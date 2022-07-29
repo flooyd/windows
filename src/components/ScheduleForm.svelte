@@ -12,7 +12,6 @@
   let phone = null;
   let email = null;
   let priceValid = false;
-  let confirmResidential = false;
   let form = null;
 
   $: form = {
@@ -79,10 +78,6 @@
       ) {
         return;
       }
-    }
-
-    if (businessName === "" && !confirmResidential) {
-      return;
     }
 
     if (priceValid) {
@@ -279,20 +274,6 @@
       }}
     />
   </div>
-  {#if businessName === ""}
-    <div class="field required residential">
-      <input
-        type="checkbox"
-        name="confirmResidential"
-        class="confirmResidential"
-        bind:checked={confirmResidential}
-        on:change={() => validateForm()}
-      />
-      <label for="confirmResidential" class="confirmResidential"
-        >I confirm that the adddress is residential.</label
-      >
-    </div>
-  {/if}
   {#if priceValid}
     <p class="bold price">
       Price: {numWindows || 0} windows/doors/mirrors = ${businessName
@@ -353,18 +334,6 @@
 
   .field.days input {
     width: fit-content;
-  }
-
-  .residential {
-    display: flex;
-    align-items: center;
-  }
-
-  .confirmResidential {
-    width: fit-content;
-    display: inline-block;
-    margin: 0px;
-    margin-right: 10px;
   }
 
   .field.days label {
