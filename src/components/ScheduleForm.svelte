@@ -71,7 +71,7 @@
     }
 
     if (
-      !isNumber(date) ||
+      (date && !isNumber(date)) ||
       date.length !== 8 ||
       date.includes("e") ||
       date.includes("-")
