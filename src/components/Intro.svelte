@@ -28,11 +28,6 @@
         >I will clean from 8am - 8pm M-F.</span
       >
     </p>
-    <p>
-      To cancel, simply tell me when I arrive at your location to clean, or
-      email me -
-      <span class="bold">windowsandmecleaning@gmail.com</span>
-    </p>
     <div class="header">Pricing</div>
     <p>
       The price is $2.75 ($4.00 for residential) per window/door/mirror
@@ -51,7 +46,7 @@
         >This site uses <a
           target="__blank"
           href="https://en.wikipedia.org/wiki/Web_storage">browser storage</a
-        > to remeber choices like this.</span
+        > to remenber choices like this.</span
       >
     </p>
   </div>
@@ -96,10 +91,10 @@
   }
 
   .showIntro {
-    background: lightyellow;
+    background: #ffe;
     width: fit-content;
     padding: 20px;
-    border: 3px solid blue;
+    border: 3px solid black;
     cursor: pointer;
   }
 
