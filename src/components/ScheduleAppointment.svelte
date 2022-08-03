@@ -22,7 +22,7 @@
   .formContainer {
     background: white;
     padding: 13px;
-    border: 3px solid blue;
+    border: 3px solid black;
     width: calc(100% - 40px);
   }
 </style>

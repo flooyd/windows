@@ -323,6 +323,7 @@
     margin-top: 20px;
     border: 1px solid black;
     font-size: 16px;
+    background: #ffe;
   }
 
   .format {
