@@ -1,9 +1,5 @@
 <nav>
-  <div class="title">Windows and Me</div>
-  <div class="info">
-    If you have questions or want to cancel service -
-    <span class="bold">windowsandmecleaning@gmail.com</span>
-  </div>
+  <div class="title">Gigs</div>
 </nav>
 
 <style>
@@ -12,12 +8,13 @@
     background: lightblue;
     display: flex;
     align-items: center;
+    justify-content: center;
     flex-wrap: wrap;
-    padding: 10px 20px;
-  }
-
-  .bold {
-    font-weight: bold;
+    padding: 8px 0px;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    border-bottom: 3px solid #333;
   }
 
   .title {

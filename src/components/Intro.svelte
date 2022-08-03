@@ -68,7 +68,7 @@
   }
 
   .hello {
-    font-size: 20px;
+    font-size: 16px;
     font-weight: bold;
   }
 
@@ -79,7 +79,7 @@
 
   .header {
     color: blue;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: bold;
     border-bottom: 3px solid blue;
     margin-bottom: 20px;
@@ -89,10 +89,6 @@
   .cookies {
     font-weight: 400;
     font-style: italic;
-  }
-
-  .lastPrice {
-    font-weight: bold;
   }
 
   p {
@@ -109,5 +105,6 @@
 
   .bold {
     font-weight: bold;
+    color: #333;
   }
 </style>

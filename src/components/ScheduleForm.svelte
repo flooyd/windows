@@ -73,6 +73,10 @@
       return;
     }
 
+    if (!email) {
+      return;
+    }
+
     if (date.length > 0) {
       if (
         !isNumber(date) ||
@@ -152,9 +156,8 @@
       on:input={() => validateForm()}
     />
   </div>
-  <div class="field">
-    <label for="email">Email (recommended if you wish to receive receipt)</label
-    >
+  <div class="field required">
+    <label for="email">Email</label>
     <input
       name="email"
       type="email"
@@ -319,14 +322,11 @@
     padding: 13px;
     margin-top: 20px;
     border: 1px solid black;
-  }
-
-  .required {
-    color: blue;
+    font-size: 16px;
   }
 
   .format {
-    color: black;
+    color: #333;
   }
 
   input {
@@ -340,6 +340,13 @@
   label {
     margin-bottom: 10px;
     display: block;
+    font-size: 13px;
+    font-weight: bold;
+    color: #333;
+  }
+
+  .required label {
+    color: blue;
   }
 
   .field {
@@ -368,6 +375,7 @@
 
   .bold {
     font-weight: bold;
+    font-size: 16px;
   }
 
   .date {
@@ -382,6 +390,7 @@
     font-size: 20px;
     background: lightblue;
     padding: 10px;
+    border: 2px solid #333;
   }
 
   input:focus {

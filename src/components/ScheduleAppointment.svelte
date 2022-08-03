@@ -13,13 +13,14 @@
 
 <style>
   .header {
-    font-size: 20px;
+    font-size: 16px;
     margin-bottom: 20px;
     margin-top: 20px;
     font-weight: bold;
+    color: #333;
   }
   .formContainer {
-    background: lightyellow;
+    background: white;
     padding: 13px;
     border: 3px solid blue;
     width: calc(100% - 40px);
