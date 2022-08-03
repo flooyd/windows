@@ -20,55 +20,32 @@
 
 {#if !collapsed}
   <div id="intro" class="intro" bind:this={intro}>
-    <p class="hello">
-      Hello! Windows and Me is a window/glass cleaning service. It is currently
-      owned and operated by one person.
-    </p>
-    <p class="hello">
-      If you have an invoice from another glass cleaning company and the total
-      price is over $30, use the file upload feature and I will beat the price.
-    </p>
+    <p class="hello">Hello! Gigs is a window/glass cleaning service.</p>
     <p>
       I will clean your windows, mirrors, and doors (commercial or residential)
-      at a fixed price.
-    </p>
-    <p>
-      I will clean inner glass (office windows, mirrors, etc.) if requested.
-      Simply add it to the total number of windows.
-    </p>
-    <p>No contract required. Schedule an appointment whenever you want.</p>
-    <p>
-      The broader your scheduled time, the better. <span class="bold"
-        >I will clean from 8am - 8pm.</span
+      at a fixed price. No contract required. Schedule an appointment whenever
+      you like, or schedule recurring appointments. <span class="bold"
+        >I will clean from 8am - 8pm M-F.</span
       >
     </p>
     <p>
-      You can schedule recurring appointments. To cancel, simply tell me when I
-      arrive at your location to clean, or email me -
+      To cancel, simply tell me when I arrive at your location to clean, or
+      email me -
       <span class="bold">windowsandmecleaning@gmail.com</span>
     </p>
     <div class="header">Pricing</div>
     <p>
       The price is $2.75 ($4.00 for residential) per window/door/mirror
-      (includes both sides of glass).
+      (includes both sides of glass). Minimum price is $20. <span class="bold"
+        >Tips appreciated!</span
+      >
     </p>
-    <p>Minimum price is $20.</p>
-    <p>The total price is always rounded down to the nearest dollar.</p>
-    <p class="lastPrice">Tips appreciated!</p>
     <div class="header">Exceptions</div>
     <p>
-      I will not remove tape, stickers, clean hard water stains, or move
-      heavy/fragile items to access a window.
-    </p>
-    <p class="lastException">
-      I will not clean broken / damaged windows. Please do not include these
-      windows in your count.
+      I will not clean broken / damaged glass, remove tape, stickers, clean hard
+      water stains, or move heavy/fragile items to access a window.
     </p>
     <div class="header">Disclaimer</div>
-    <p class="payment">
-      As this is a software "beta" / brand new service, I currently only accept
-      cash payment. I will email receipt / invoice upon request.
-    </p>
     <p class="collapseInfo">
       Click / Tap anywhere in this section to collapse it. <span class="cookies"
         >This site uses <a
