@@ -46,7 +46,7 @@
         >This site uses <a
           target="__blank"
           href="https://en.wikipedia.org/wiki/Web_storage">browser storage</a
-        > to remenber choices like this.</span
+        > to remember choices like this.</span
       >
     </p>
   </div>
