@@ -1,4 +1,6 @@
 <script>
+  import socket from "../stores/socketio";
+
   let formIsValid = false;
   let frequency = null;
   let location = null;
@@ -13,6 +15,7 @@
   let email = null;
   let priceValid = false;
   let form = null;
+  let price = 0;
 
   $: form = {
     formIsValid,
@@ -25,7 +28,8 @@
     finishBy,
     days,
     frequency,
-    date,
+    date: parseInt(date),
+    price,
   };
 
   $: console.log(form);
@@ -86,15 +90,32 @@
   };
 
   const checkMinimumPrice = () => {
-    let price = businessName
+    price = businessName
       ? Math.floor(numWindows * 2.75)
       : Math.floor(numWindows * 4.0);
     if (price >= 20) priceValid = true;
     else priceValid = false;
   };
+
+  const handleSubmitForm = (e) => {
+    e.preventDefault();
+    $socket.emit("createJob", form);
+  };
+
+  $socket.on("createJob", (data) => console.log(data));
+
+  $socket.on("error", (data) => console.error(data));
+  $socket.onAny((event, data) => {
+    if (event === "message") {
+      console.log(JSON.parse(data).message);
+    }
+  });
+
+  $socket.emit("findAllJobs");
+  $socket.on("findAllJobs", (data) => console.log("jobs", data));
 </script>
 
-<form>
+<form on:submit={(e) => handleSubmitForm(e)}>
   <div class="field">
     <label for="name">Business Name (if residential, leave blank)</label>
     <input
