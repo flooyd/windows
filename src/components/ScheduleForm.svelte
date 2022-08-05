@@ -111,12 +111,25 @@
   $socket.on("error", (data) => console.error(data));
   $socket.onAny((event, data) => {
     if (event === "message") {
-      console.log(JSON.parse(data).message);
+      if (JSON.parse(data)) {
+        console.log(JSON.parse(data).message);
+      } else {
+        console.log(data);
+      }
     }
   });
 
-  $socket.emit("findAllJobs");
-  $socket.on("findAllJobs", (data) => console.log("jobs", data));
+  $socket.on("userConnect", (data) => {
+    console.log(data);
+  });
+
+  $socket.on("selfConnect", (data) => {
+    console.log(data);
+  });
+
+  $socket.on("userDisconnect", (data) => {
+    console.log(data);
+  });
 </script>
 
 <form on:submit={(e) => handleSubmitForm(e)}>
